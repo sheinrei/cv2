@@ -32,8 +32,8 @@
 }
 
 h1{
-    line-height: 60px;
-    font-size: 64px;
+    line-height: 64px;
+    font-size: 64px !important;
     transform: translateX(-2px);
 }
 .main-header-subtitle {
