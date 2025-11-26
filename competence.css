@@ -1,0 +1,11 @@
+.frame-competence {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.title-competence {
+    font-weight: 600;
+    color: var(--color-cyan);
+    font-size: 20px;
+}

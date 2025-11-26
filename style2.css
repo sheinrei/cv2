@@ -1,0 +1,139 @@
+:root {
+    --padding-main: 30px;
+    --color-content : #FAFAFA;
+    --color-subtext : rgb(103, 111, 126);
+    --color-cyan : rgb(11, 177, 218);
+    
+    --border-color: rgb(226, 228, 233);
+
+    --gradient-blue-right : linear-gradient(to right, rgb(11, 177, 218), rgb(43, 48, 59));
+    --gradient-blue-top : linear-gradient(to bottom, rgb(11, 177, 218), rgb(43, 48, 59));
+}
+
+*{
+    user-select: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 48px;
+    letter-spacing: -2px;
+}
+
+a{
+    display:flex;
+    align-items: center;
+    gap:4px
+}
+
+.cv {
+    width: 70%;
+    min-height: 100vh;
+    border-radius: 15px;
+    border: 1px solid black;
+    overflow: hidden;
+    margin : 20px 0px;
+}
+
+li{
+    position:relative;
+    margin-left:20px
+}
+li::before{
+    content:"";
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left: -15px;
+    width: 7px;
+    height: 7px;
+    border-radius:50%;
+    background-color: var(--color-cyan);
+}
+
+/* ==== main header ====*/
+.main-header {
+    background-image: var(--gradient-blue-right);
+    padding: var(--padding-main);
+    display:flex;
+    flex-direction: column;
+    gap:30px
+}
+
+
+.main-header-frame-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    color: white;
+    gap:30px
+}
+
+
+.photo-me {
+    height: 130px;
+    width: 130px;
+    border-radius:50%;
+    border:2px solid rgb(226, 228, 233)
+} 
+
+.main-header-frame-title{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-header-subtitle{
+    font-size : 24px
+}
+
+
+.main-header-contact{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    color:white;
+    gap:70px
+}
+
+
+
+
+/* cv content */
+.cv-content{
+    background-color: var(--color-content);
+    height: 100%;
+    display: flex;
+}
+
+/* frame left */
+.frame-left{
+    width: 35%;
+    min-height: 100vh;
+    padding:20px 30px 20px 60px;
+
+}
+
+/* frame rght */
+.frame-right{
+    width:65%;
+    min-height: 100vh;
+    padding:20px 60px 20px 30px;
+}
+
+.frame-right section{
+    display:flex;
+    flex-direction: column;
+    gap:10px
+}
+
+.text-presentation{
+    padding:10px;
+    text-indent: 1em;
+}
+
