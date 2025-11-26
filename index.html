@@ -14,13 +14,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;600&family=Oswald:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="element.css">
     <link rel="stylesheet" href="competence.css">
-    <link rel="stylesheet" href="print.css">
+    <link rel="stylesheet" href="responciv.css">
 
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="arrow.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -35,7 +36,20 @@
                 <div class="main-header-frame-title">
                     <h1>Laurent Beaute</h1>
                     <p class="main-header-subtitle">Développeur Web Full Stack</p>
-                    <p>Recherche de stage de 6 semaines à partir de janvier 2026</p>
+                    <p class="message-header"><svg class="arrow arrow-left" id="arrow-left"
+                            xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 5v14"></path>
+                            <path d="m19 12-7 7-7-7"></path>
+                        </svg>
+                        Recherche de stage de 6 semaines à partir de janvier 2026
+                        <svg class="arrow arrow-right" id="arrow-right" xmlns="http://www.w3.org/2000/svg" width="20"
+                            height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 5v14"></path>
+                            <path d="m19 12-7 7-7-7"></path>
+                        </svg>
+                    </p>
                 </div>
 
             </div>
@@ -151,30 +165,6 @@
                         <p>🎸Musique (guitare)</p>
                         <p>🌱 Permaculture</p>
                     </div>
-                    <!-- Formation-->
-                    <section>
-                        <div class="title">
-                            <span class="title-border-left"></span>
-                            <p class="main-title">Formation</p>
-                        </div>
-
-                        <div class="experience-content">
-                            <div class="frame-experience">
-                                <p class="experience-title">Formapedia - Dev Web</p>
-                                <p class="experience-date">05/2025 – 02/2026</p>
-                            </div>
-
-                            <div class="frame-experience">
-                                <p class="experience-title">Promotrans Toulouse - Préparateur commandes</p>
-                                <p class="experience-date">2017</p>
-                            </div>
-
-                            <div class="frame-experience">
-                                <p class="experience-title">LEPA Moissac - Bac pro paysagiste</p>
-                                <p class="experience-date">2009 – 2012</p>
-                            </div>
-                        </div>
-                    </section>
                 </div>
             </section>
 
@@ -223,8 +213,8 @@
                                     <li>GitHub</li>
                                     <li>Docker</li>
                                     <li>VSCode</li>
+                                    <li>cPanel</li>
                                     <li>IA</li>
-                                    <li>Linux</li>
                                 </ul>
                             </div>
                         </div>
@@ -341,34 +331,66 @@
                     </div>
                 </section>
 
-                <!-- experience pro -->
-                <section>
-                    <div class="title">
-                        <span class="title-border-left"></span>
-                        <p class="main-title">Expériences Professionnelles</p>
-                    </div>
-
-                    <div class="experience-content">
-                        <div class="frame-experience">
-                            <p class="experience-title">Auriol Frappe à Froid</p>
-                            <p class="experience-subtitle">Magasinier Cariste, opérateur finition</p>
-                            <p class="experience-date">2018 – 2024</p>
-                        </div>
-
-                        <div class="frame-experience">
-                            <p class="experience-title">Lagrange Production</p>
-                            <p class="experience-subtitle">Cariste</p>
-                            <p class="experience-date">2018</p>
-                        </div>
-
-                        <div class="frame-experience">
-                            <p class="experience-title">Missions intérim diverses</p>
-                            <p class="experience-date">2012 – 2017</p>
-                        </div>
-                    </div>
-                </section>
 
             </section>
         </section>
+
+        <!-- bottom -->
+        <section class="frame-bottom">
+            <!-- Formation-->
+            <section class="frame-formation">
+                <div class="title">
+                    <span class="title-border-left"></span>
+                    <p class="main-title">Formation</p>
+                </div>
+
+                <div class="experience-content">
+                    <div class="frame-experience-content">
+                        <p class="experience-title">Formapedia - Dev Web</p>
+                        <p class="experience-date">05/2025 – 02/2026</p>
+                    </div>
+
+                    <div class="frame-experience-content">
+                        <p class="experience-title">Promotrans Toulouse - Préparateur commandes</p>
+                        <p class="experience-date">2017</p>
+                    </div>
+
+                    <div class="frame-experience-content">
+                        <p class="experience-title">LEPA Moissac - Bac pro paysagiste</p>
+                        <p class="experience-date">2009 – 2012</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- experience pro -->
+            <section class="frame-experience">
+                <div class="title">
+                    <span class="title-border-left"></span>
+                    <p class="main-title">Expériences Professionnelles</p>
+                </div>
+
+                <div class="experience-content">
+                    <div class="frame-experience-content">
+                        <p class="experience-title">Auriol Frappe à Froid</p>
+                        <p class="experience-subtitle">Magasinier Cariste, opérateur finition</p>
+                        <p class="experience-date">2018 – 2024</p>
+                    </div>
+
+                    <div class="frame-experience-content">
+                        <p class="experience-title">Lagrange Production</p>
+                        <p class="experience-subtitle">Cariste</p>
+                        <p class="experience-date">2018</p>
+                    </div>
+
+                    <div class="frame-experience-content">
+                        <p class="experience-title">Missions intérim diverses</p>
+                        <p class="experience-date">2012 – 2017</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
     </section>
+
 </body>

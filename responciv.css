@@ -1,0 +1,144 @@
+/* Responsive Design */
+@media (max-width: 1024px) {
+
+    .main-header {
+        padding-left: 30px
+    }
+
+    .main-header-contact {
+        width: 100%;
+        gap: 30px
+    }
+
+    .main-header-contact a {
+        width: fit-content;
+    }
+
+    .photo-me {
+        width: 120px;
+        height: 120px;
+        border-width: 2px;
+    }
+
+    h1 {
+        font-size: 48px
+    }
+
+    .cv-content {
+        flex-direction: column;
+    }
+
+    .frame-left {
+        width: 100%;
+        padding-left: 30px;
+        min-height: none;
+    }
+
+    .frame-right {
+        width: 100%;
+        padding-right: 30px;
+    }
+
+    .frame-competence {
+        margin-left: 0;
+        justify-content: center;
+        gap: 50px
+    }
+
+    .frame-bottom {
+        flex-direction: column;
+    }
+
+    .frame-formation {
+        width: 100%;
+    }
+
+    .frame-experience {
+        width: 100%;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .cv {
+        width: 90%;
+    }
+
+    .main-header {
+        padding: 25px
+    }
+
+    .main-header-frame-top {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 32px;
+        line-height: 34px;
+    }
+
+    .main-header-subtitle {
+        font-size: 22px
+    }
+
+    .arrow {
+        scale: 1.6;
+    }
+
+    .message-header {
+        text-align: center;
+    }
+
+    .main-header-contact {
+        flex-direction: column;
+        gap: 0
+    }
+
+    a {
+        font-size: 14px;
+        margin-top: 4px
+    }
+
+    .frame-right,
+    .frame-left,
+    .frame-experience,
+    .frame-formation {
+        padding: 10px 25px
+    }
+
+    .title {
+        font-size: 14px;
+    }
+
+
+    .frame-competence {
+        gap: 10px;
+        width: fit-content;
+    }
+
+    .title-competence {
+        border-bottom: 1px solid var(--color-cyan);
+        margin-bottom: 10px
+    }
+}
+
+@media (max-width: 468px) {
+    .cv {
+        width: 95%;
+    }
+
+    .frame-competence {
+        flex-wrap: wrap;
+    }
+
+    .frame-right,
+    .frame-left,
+    .frame-experience,
+    .frame-formation,.main-header {
+        padding: 10px 10px
+    }
+
+}

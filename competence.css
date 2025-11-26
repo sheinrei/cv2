@@ -1,7 +1,9 @@
 .frame-competence {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: start;
+    gap:20%;
+    margin-left:10%;
 }
 
 .title-competence {
