@@ -8,7 +8,7 @@
     gap: 5px;
     border-bottom: 1px solid rgb(11, 177, 218);
     letter-spacing: -1px;
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
 
 .main-title {
@@ -36,12 +36,12 @@
     padding: 10px 20px;
 
     overflow: hidden;
-    position:relative;
+    position: relative;
 
     margin: 10px 0;
 }
 
-.card-title{
+.card-title {
     font-weight: 600;
     font-size: 20px;
     color: rgb(20, 20, 20);
@@ -63,7 +63,7 @@
 
 
 /* Projet */
-.section-projet{
+.section-projet {
     padding: 15px 0px
 }
 
@@ -72,6 +72,7 @@
     flex-direction: row;
     align-items: center;
     gap: 10px;
+    position: relative
 }
 
 .tag {
@@ -79,7 +80,7 @@
     border-radius: 12px;
     padding: 0px 8px;
     border: 1px solid rgb(169, 169, 169);
-    font-size:14px;
+    font-size: 14px;
 }
 
 .card-title-row h3 {
@@ -112,6 +113,12 @@
     transform: scaleY(1);
 }
 
+.link-project {
+    position: absolute;
+    right: 0;
+    color: rgb(59, 81, 128);
+    font-weight: 700;
+}
 
 
 

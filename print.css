@@ -1,0 +1,47 @@
+@media print {
+    @page {
+        size: A4 portrait;
+    }
+
+    html,
+    body {
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        padding: 0;
+    }
+
+    *{
+        font-size:12px;
+        line-height: 12px;
+    }
+
+    .cv{
+        width:100%;
+        height: 100%;
+    }
+    .arrow{
+        display:none;
+    }
+    .text-presentation{
+        font-size: 12px !important;
+    }
+    .main-header-frame-top,.cv-content{
+        flex-direction: row !important;
+    }
+
+    .main-header-contact> div:last-child{
+        display:none
+        
+    }
+
+    .tag{
+        font-size:10px;
+        padding:2px 4px;
+    }
+
+    .link-projet{
+        display:none
+    }
+
+}
